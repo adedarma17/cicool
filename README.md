@@ -1,6 +1,10 @@
 # Cicool - Page, Form, Rest API and CRUD Generator
 Cicool web builder is used to create dynamic web, making rest API, Dynamic Forms, CRUD dynamic and Page Builder incredible, build web application fast and possible!
 
+# Requirements
+- PHP7.0 – 7.3
+- Mysql Full Group
+
 # Features
 - HMVC
 - CRUD Generator
@@ -88,7 +92,3 @@ Secure input and make the data fit with what they want with input validation in 
 - exact length
 - max item
 - and more...
-
-# Requirements
-- PHP7.0 – 7.3
-- Mysql Full Group
