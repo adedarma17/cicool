@@ -314,7 +314,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '6b535cd%5c7#5b59dba&21496*675$6*0^@f2ebf';
+$config['encryption_key'] = '=eXm(?-RD-+KZfzrd}f{@g;aW%#byqtMyXqD8)!mc/p5M2Efr!$VGePz6c)P(3Pu';
 
 /*
 |--------------------------------------------------------------------------
@@ -368,7 +368,7 @@ $config['encryption_key'] = '6b535cd%5c7#5b59dba&21496*675$6*0^@f2ebf';
 |
 */
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'lEHRdarK';
+$config['sess_cookie_name'] = 'fDqLePQZ';
 $config['sess_expiration'] = 86400;
 $config['sess_save_path'] = APPPATH . '/cache/junk';
 $config['sess_match_ip'] = FALSE;
@@ -422,7 +422,7 @@ $config['standardize_newlines'] = FALSE;
 |          for backwards compatibility purposes!
 |
 */
-$config['global_xss_filtering'] = FALSE;
+$config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -438,9 +438,9 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_regenerate' = Regenerate token on every submission
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
 */
-$config['csrf_protection'] = TRUE;
-$config['csrf_token_name'] = 'TtWFMqzx';
-$config['csrf_cookie_name'] = 'VUHlFgLz';
+$config['csrf_protection'] = FALSE;
+$config['csrf_token_name'] = 'XgYrWhaP';
+$config['csrf_cookie_name'] = 'kpgvJqOG';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = FALSE;
 $config['csrf_exclude_uris'] = array();
