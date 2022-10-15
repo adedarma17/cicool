@@ -203,7 +203,7 @@
       <div class="pull-right hidden-xs">
         <b><?= cclang('version') ?></b> <?= VERSION ?>
       </div>
-      <strong>Copyright &copy; 2016-<?= date('Y'); ?> <a href="#"><?= get_option('site_name'); ?></a>.</strong> All rights
+      <strong>Copyright &copy; <?= date('Y'); ?> <a href="#"><?= get_option('site_name'); ?></a>.</strong> All rights
       reserved.
     </footer>
 

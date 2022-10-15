@@ -14731,7 +14731,7 @@ function program17(depth0,data) {
           }
         }
 
-        toolbar.find('a[data-wysihtml5-command="formatBlock"]').on('click', function(e) {
+        toolbar.find('a[data-wysihtml5-command="formatBlock"]').click(function(e) {
           var target = e.delegateTarget || e.target || e.srcElement,
           el = $(target),
           showformat = el.data('wysihtml5-display-format-name'),
@@ -14741,7 +14741,7 @@ function program17(depth0,data) {
           }
         });
 
-        toolbar.find('a[data-wysihtml5-command="foreColor"]').on('click', function(e) {
+        toolbar.find('a[data-wysihtml5-command="foreColor"]').click(function(e) {
           var target = e.target || e.srcElement;
           var el = $(target);
           self.toolbar.find('.current-color').text(el.html());

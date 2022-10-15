@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?= get_option('site_name') ?> | Log in</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="<?= BASE_ASSET ?>admin-lte/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?= BASE_ASSET ?>font-awesome-4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="<?= BASE_ASSET ?>ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="<?= BASE_ASSET ?>admin-lte/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?= BASE_ASSET ?>admin-lte/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?= BASE_ASSET ?>admin-lte/bower_components/Ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="<?= BASE_ASSET ?>admin-lte/dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="<?= BASE_ASSET ?>admin-lte/plugins/iCheck/square/blue.css">
   <link rel="stylesheet" href="<?= BASE_ASSET ?>css/auth.css">
@@ -70,19 +70,19 @@
       </div>
       <?= form_close(); ?>
 
-      <a href="<?= site_url('administrator/forgot-password'); ?>"><?= cclang('i_forgot_my_password'); ?></a><br>
-      <a href="<?= site_url('administrator/register'); ?>" class="text-center"><?= cclang('register_a_new_membership'); ?></a>
+      <!-- <a href="<?= site_url('administrator/forgot-password'); ?>"><?= cclang('i_forgot_my_password'); ?></a><br> -->
+      <!-- <a href="<?= site_url('administrator/register'); ?>" class="text-center"><?= cclang('register_a_new_membership'); ?></a> -->
 
-      <br>
-      <br>
-      <p align="center"><b>-<?= cclang('or') ?>-</b></p>
-      <a href="<?= site_url('oauth/v/google'); ?>" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google"></i> <?= cclang('sign_in_using') ?> Google+</a>
+      <!-- <br> -->
+      <!-- <br> -->
+      <!-- <p align="center"><b>-<?= cclang('or') ?>-</b></p> -->
+      <!-- <a href="<?= site_url('oauth/v/google'); ?>" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google"></i> <?= cclang('sign_in_using') ?> Google+</a> -->
 
     </div>
   </div>
 
-  <script src="<?= BASE_ASSET ?>admin-lte/plugins/jQuery/jquery-3.6.0.min.js"></script>
-  <script src="<?= BASE_ASSET ?>admin-lte/bootstrap/js/bootstrap.min.js"></script>
+  <script src="<?= BASE_ASSET ?>admin-lte/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="<?= BASE_ASSET ?>admin-lte/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="<?= BASE_ASSET ?>admin-lte/plugins/iCheck/icheck.min.js"></script>
   <script>
     $(function() {

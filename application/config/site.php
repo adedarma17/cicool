@@ -9,5 +9,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Your site name,
 |
 */
-$config['site_name'] = 'Cicool - Page, Form, Rest API and CRUD Generator';
-$config['version'] = '3.4.1';
+$config['site_name'] = 'DICINTHO';
+$config['version'] = '1.0';

@@ -19,7 +19,7 @@
                 if (mail.headers) {
                     var headers = $('<pre />').addClass(csscls('headers')).appendTo(li);
                     $('<code />').text(mail.headers).appendTo(headers);
-                    li.on('click', function() {
+                    li.click(function() {
                         if (headers.is(':visible')) {
                             headers.hide();
                         } else {

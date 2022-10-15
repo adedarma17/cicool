@@ -108,7 +108,7 @@
                                 '">' + stmt.params[key] + '</td></tr>');
                         }
                     }
-                    li.css('cursor', 'pointer').on('click', function() {
+                    li.css('cursor', 'pointer').click(function() {
                         if (table.is(':visible')) {
                             table.hide();
                         } else {

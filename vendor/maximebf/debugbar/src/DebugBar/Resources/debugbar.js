@@ -501,31 +501,31 @@ if (typeof(PhpDebugBar) == 'undefined') {
 
             // close button
             this.$closebtn = $('<a />').addClass(csscls('close-btn')).appendTo(this.$headerRight);
-            this.$closebtn.on('click', function() {
+            this.$closebtn.click(function() {
                 self.close();
             });
 
             // minimize button
             this.$minimizebtn = $('<a />').addClass(csscls('minimize-btn') ).appendTo(this.$headerRight);
-            this.$minimizebtn.on('click', function() {
+            this.$minimizebtn.click(function() {
                 self.minimize();
             });
 
             // maximize button
             this.$maximizebtn = $('<a />').addClass(csscls('maximize-btn') ).appendTo(this.$headerRight);
-            this.$maximizebtn.on('click', function() {
+            this.$maximizebtn.click(function() {
                 self.restore();
             });
 
             // restore button
             this.$restorebtn = $('<a />').addClass(csscls('restore-btn')).hide().appendTo(this.$el);
-            this.$restorebtn.on('click', function() {
+            this.$restorebtn.click(function() {
                 self.restore();
             });
 
             // open button
             this.$openbtn = $('<a />').addClass(csscls('open-btn')).appendTo(this.$headerRight).hide();
-            this.$openbtn.on('click', function() {
+            this.$openbtn.click(function() {
                 self.openHandler.show(function(id, dataset) {
                     self.addDataSet(dataset, id, "(opened)");
                     self.showTab();
@@ -616,7 +616,7 @@ if (typeof(PhpDebugBar) == 'undefined') {
             }
 
             var self = this;
-            tab.$tab.appendTo(this.$headerLeft).on('click', function() {
+            tab.$tab.appendTo(this.$headerLeft).click(function() {
                 if (!self.isMinimized() && self.activePanelName == name) {
                     self.minimize();
                 } else {

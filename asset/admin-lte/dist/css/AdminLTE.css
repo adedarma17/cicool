@@ -718,7 +718,7 @@ a:focus {
 .fixed .control-sidebar {
   position: fixed;
   height: 100%;
-  /* overflow-y: auto; */
+  overflow-y: auto;
   padding-bottom: 50px;
 }
 .nav-tabs.control-sidebar-tabs > li:first-of-type > a,

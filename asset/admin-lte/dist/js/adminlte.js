@@ -753,7 +753,7 @@ throw new Error('AdminLTE requires jQuery')
       $('body').addClass(ClassName.expandFeature);
     }
 
-    $(Selector.contentWrapper).on('click', function () {
+    $(Selector.contentWrapper).click(function () {
       // Enable hide menu when clicking on the content-wrapper on small screens
       if ($(window).width() <= this.options.collapseScreenSize && $('body').hasClass(ClassName.open)) {
         this.close();
@@ -761,7 +761,7 @@ throw new Error('AdminLTE requires jQuery')
     }.bind(this));
 
     // __Fix for android devices
-    $(Selector.searchInput).on('click', function (e) {
+    $(Selector.searchInput).click(function (e) {
       e.stopPropagation();
     });
   };
@@ -806,7 +806,7 @@ throw new Error('AdminLTE requires jQuery')
   };
 
   PushMenu.prototype.expandOnHover = function () {
-    $(Selector.mainSidebar).on('mouseover', function () {
+    $(Selector.mainSidebar).hover(function () {
       if ($('body').is(Selector.mini + Selector.collapsed)
         && $(window).width() > this.options.collapseScreenSize) {
         this.expand();
