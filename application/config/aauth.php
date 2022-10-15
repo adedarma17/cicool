@@ -129,7 +129,7 @@ $config_aauth["default"] = array(
     'login_with_name'                => false,
 
     'email'                          => 'admin@admin.com',
-    'name'                           => 'Cicool No reply',
+    'name'                           => 'SIM RS MDJ No reply',
     'email_config'                   => true,
 
     'verification'                   => false,

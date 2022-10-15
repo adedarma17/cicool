@@ -1,8 +1,8 @@
 define({
-  "name": "Cicool Documentation",
+  "name": "SIM RS MDJ Documentation",
   "version": "0.1.0",
-  "description": "API DOC Cicool",
-  "title": "Cicool application",
+  "description": "API DOC SIM RS MDJ",
+  "title": "SIM RS MDJ application",
   "url": "",
   "sampleUrl": false,
   "apidoc": "0.2.0",

@@ -2,9 +2,9 @@
 
 $config = array(
     'protocol' => 'smtp', // 'mail', 'sendmail', or 'smtp'
-    'smtp_host' => 'smtp.gmail.com',
+    'smtp_host' => 'smtp.rsdjamil.co.id',
     'smtp_port' => 587,
-    'smtp_user' => 'cicool.email@gmail.com',
+    'smtp_user' => 'simrs@rsdjamil.co.id',
     'smtp_pass' => 'Pasundan_96',
     'smtp_crypto' => 'tls', 
     'mailtype' => 'html', 

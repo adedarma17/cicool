@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 15, 2022 at 01:33 PM
+-- Generation Time: Oct 15, 2022 at 05:27 PM
 -- Server version: 5.6.51
 -- PHP Version: 7.3.33
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `cicool`
+-- Database: `simrsmdj`
 --
 
 -- --------------------------------------------------------
@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS `aauth_login_attempts` (
   `timestamp` datetime DEFAULT NULL,
   `login_attempts` tinyint(2) UNSIGNED DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -85,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `aauth_perms` (
   `name` varchar(100) DEFAULT NULL,
   `definition` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=89 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=93 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `aauth_perms`
@@ -179,7 +179,11 @@ INSERT INTO `aauth_perms` (`id`, `name`, `definition`) VALUES
 (85, 'dashboard', NULL),
 (86, 'extension_list', NULL),
 (87, 'extension_activate', NULL),
-(88, 'extension_deactivate', NULL);
+(88, 'extension_deactivate', NULL),
+(89, 'chat_list', ''),
+(90, 'database_list', ''),
+(91, 'database_update', ''),
+(92, 'database_view', '');
 
 -- --------------------------------------------------------
 
@@ -274,7 +278,7 @@ CREATE TABLE IF NOT EXISTS `aauth_users` (
 --
 
 INSERT INTO `aauth_users` (`id`, `email`, `oauth_uid`, `oauth_provider`, `pass`, `username`, `full_name`, `avatar`, `banned`, `last_login`, `last_activity`, `date_created`, `forgot_exp`, `remember_time`, `remember_exp`, `verification_code`, `top_secret`, `ip_address`) VALUES
-(1, 'admin@admin.com', NULL, NULL, 'ec225039f1cb0c48ad528709e8e0184991e637d96db175f094b6b2037ec1a3c2', 'admin', 'admin', '', 0, NULL, NULL, '2022-10-15 13:33:29', NULL, NULL, NULL, NULL, NULL, NULL);
+(1, 'admin@admin.com', NULL, NULL, 'ec225039f1cb0c48ad528709e8e0184991e637d96db175f094b6b2037ec1a3c2', 'admin', 'admin', '', 0, '2022-10-16 00:25:38', '2022-10-16 00:25:38', '2022-10-15 13:33:29', NULL, NULL, NULL, NULL, NULL, '::1');
 
 -- --------------------------------------------------------
 
@@ -340,7 +344,7 @@ CREATE TABLE IF NOT EXISTS `blog` (
 --
 
 INSERT INTO `blog` (`id`, `title`, `slug`, `content`, `image`, `tags`, `category`, `status`, `author`, `viewers`, `created_at`, `updated_at`) VALUES
-(1, 'Hello Wellcome To Cicool Builder', 'Hello-Wellcome-To-Ciool-Builder', 'greetings from our team I hope to be happy! ', 'wellcome.jpg', 'greetings', '1', 'publish', 'admin', 0, '2022-10-15 13:33:29', '0000-00-00 00:00:00');
+(1, 'Hello Wellcome To SIM RS MDJ Builder', 'Hello-Wellcome-To-Ciool-Builder', 'greetings from our team I hope to be happy! ', 'wellcome.jpg', 'greetings', '1', 'publish', 'admin', 0, '2022-10-15 13:33:29', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -391,7 +395,33 @@ CREATE TABLE IF NOT EXISTS `cc_options` (
   `option_name` varchar(200) NOT NULL,
   `option_value` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `cc_options`
+--
+
+INSERT INTO `cc_options` (`id`, `option_name`, `option_value`) VALUES
+(1, 'timezone', 'Asia/Jakarta'),
+(2, 'chat_fb_url', ''),
+(3, 'enable_crud_builder', NULL),
+(4, 'enable_api_builder', NULL),
+(5, 'enable_form_builder', NULL),
+(6, 'enable_page_builder', NULL),
+(7, 'enable_disqus', NULL),
+(8, 'disqus_id', ''),
+(9, 'limit_pagination', '10'),
+(10, 'site_description', 'Digital Computerized Information of Transformation Hospital'),
+(11, 'keywords', ''),
+(12, 'author', 'SIM RS MDJ'),
+(13, 'site_name', 'DICINTHO'),
+(14, 'logo', NULL),
+(15, 'active_theme', 'cicool'),
+(16, 'landing_page_id', 'default'),
+(17, 'email', 'simrs@rsdjamil.co.id'),
+(18, 'google_id', ''),
+(19, 'google_secret', ''),
+(20, 'chat_fb_key', '681c2b80531bf48f52f99ad6d3928fdc');
 
 -- --------------------------------------------------------
 
